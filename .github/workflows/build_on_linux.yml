@@ -104,13 +104,13 @@ jobs:
         shell: bash
 
       - name: Upload artifact - AppImage (Ubuntu)
-        uses: actions/upload-artifact@v2.3.1
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: Chatterino-x86_64-${{ matrix.qt-version }}-${{ matrix.build-system }}.AppImage
           path: build/Chatterino-x86_64.AppImage
 
       - name: Upload artifact - .deb (Ubuntu)
-        uses: actions/upload-artifact@v2.3.1
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: Chatterino-${{ matrix.qt-version }}-${{ matrix.build-system }}.deb
           path: build/Chatterino.deb
